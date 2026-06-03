@@ -1,0 +1,119 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    font-family:Arial, sans-serif;
+   background-color:#5178e4;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background-color:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+
+nav{
+    background-color:#686b70;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    list-style:none;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:40px;
+    background:white;
+}
+
+/* Sections */
+
+section{
+    background:white;
+
+    margin:20px;
+    padding:20px;
+
+    border-radius:8px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:10px;
+    text-align:center;
+}
+
+/* Form */
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+/* Button */
+
+button{
+    padding:10px 20px;
+}
+
+/* Footer */
+
+footer{
+    background-color:#1e3a8a;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
