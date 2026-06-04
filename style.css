@@ -110,6 +110,7 @@ button{
     padding:10px 20px;
 }
 
+
 /* Footer */
 
 footer{
@@ -132,4 +133,30 @@ footer{
         align-items:center;
     }
 
+}
+
+/*Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode nav {
+    background-color: #333;
+}
+.dark-mode footer {
+    background-color: #a4a4b8;
+}
+.dark-mode button {
+    background-color: #555;
+    color: white;
+}
+.dark-mode button:hover {
+    background-color: #777;
+}
+.dark-mode a {
+    color: #66ccff;
 }
