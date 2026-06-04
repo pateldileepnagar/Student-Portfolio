@@ -55,6 +55,14 @@ nav a:hover{
     background:white;
 }
 
+/* Profile Picture */
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
 /* Sections */
 
 section{
@@ -80,12 +88,19 @@ td{
 }
 
 /* Form */
-
-input,
+input[type="text"],
+input[type="email"],
 textarea,
 select{
     width:100%;
     padding:8px;
+    margin-top:5px;
+}
+
+/* Options Container */
+.options{
+    display:flex;
+    gap:20px;
     margin-top:5px;
 }
 
@@ -98,13 +113,14 @@ button{
 /* Footer */
 
 footer{
-    background-color:#1e3a8a;
+    background-color:#0f0f10;
     color:white;
 
     text-align:center;
 
     padding:20px;
     margin-top:20px;
+     border-top:4px solid #2563eb;
 }
 
 /* Responsive Design */
