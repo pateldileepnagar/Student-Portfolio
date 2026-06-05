@@ -1,8 +1,10 @@
 // Welcome Message
 
 window.onload = function () {
-    document.getElementById("welcomeMessage").textContent =
-    "Welcome to my portfolio website!";
+
+    document.getElementById("welcomeMessage")
+    .textContent = "Welcome to my Portfolio Website!";
+
 };
 
 
@@ -152,8 +154,37 @@ if (timeBtn && timeDisplay) {
 const darkModeBtn =
 document.getElementById("darkModeBtn");
 
-darkModeBtn.addEventListener("click", function () {
+/* Load Saved Preference */
+
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark-mode");
+
+    darkModeBtn.textContent =
+    "☀️ Light Mode";
+}
+
+/* Toggle Theme */
+
+darkModeBtn.addEventListener("click", function(){
 
     document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme", "dark");
+
+        darkModeBtn.textContent =
+        "☀️ Light Mode";
+
+    }
+    else{
+
+        localStorage.setItem("theme", "light");
+
+        darkModeBtn.textContent =
+        "🌙 Dark Mode";
+
+    }
 
 });

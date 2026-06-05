@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -26,8 +27,11 @@
   </nav>
   <section class="hero">
     <img src="myphoto.jpeg" alt="Me" class="profile-pic" />
+
     <h2>Hi, I'm Dileep Patel</h2>
+
     <p>Cybersecurity Student | Future Web Developer</p>
+
     <p id="welcomeMessage"></p>
   </section>
   <main>
@@ -62,113 +66,136 @@
     </section>
 
     <section id="hobbies">
+
       <h2>Hobbies</h2>
-      <ol>
-        <li>Coding</li>
-        <li>Playing Cricket</li>
-        <li>Traveling</li>
-      </ol>
-    </section>
+      <div class="hobby-container">
 
-    <section id="career-goals">
-      <h2>Career Goals</h2>
-      <p>
-        My career goal is to become a proficient web developer and contribute
-        to innovative projects in the tech industry.
-      </p>
-     
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:dileep.patel@gmail.com">dileep.patel@gmail.com</a>
-        Phone: <a href="tel:+8005662627">+800 566 2627</a>
-      </p>
-    </section>
-
-    <!-- ===== TABLE ===== -->
-    <section>
-      <h2>Grades</h2>
-      <table border="1">
-        <tr>
-          <th>Subject</th>
-          <th>Grade</th>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>A</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>A</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>B</td>
-        </tr>
-      </table>
-    </section>
-    <!-- ===== FORM ===== -->
-    <section id="contact-form">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <!-- Comment 1: Name field -->
-        <label>Name:</label>
-        <input type="text" id="name" name="name" /><br /><br />
-
-        <!-- Comment 2: Email field -->
-        <label>Email:</label>
-        <input type="email" id="email" name="email" /><br /><br />
-
-        <!-- Branch Dropdown -->
-        <label>Branch:</label>
-        <select name="branch">
-          <option>BCA</option>
-          <option>MCA</option>
-          <option>CS</option>
-        </select><br /><br />
-
-        <!-- Gender Radio -->
-        <div class="options">
-          <input type="radio" name="gender" value="Male" /> Male
-
-          <input type="radio" name="gender" value="Female" /> Female
+        <div class="hobby-card">
+          💻 Coding
         </div>
 
-        <!-- Skills Checkbox -->
-        <div class="options">
-          <input type="checkbox" value="HTML" /> HTML
-
-          <input type="checkbox" value="CSS" /> CSS
-
-          <input type="checkbox" value="Java" /> Java
+        <div class="hobby-card">
+          🏏 Cricket
         </div>
 
-        <!-- Comment 3: Message textarea -->
-        <label>Message:</label><br />
-        <textarea id="message" rows="4" cols="40"></textarea>
+        <div class="hobby-card">
+          ✈️ Traveling
+        </div>
 
-        <button type="submit">Submit</button>
-      </form> 
-      <button id="timeBtn">Show Current Time</button>
+      </div>
 
-      <p id="timeDisplay"></p>
 
-    </section>
+      <section id="career-goals">
+        <h2>Career Goals</h2>
+        <p>
+          My career goal is to become a proficient web developer and contribute
+          to innovative projects in the tech industry.
+        </p>
 
-    <!-- ===== LINKS ===== -->
-    <section>
-      <h2>Links</h2>
-      <p>
-        <a href="https://github.com/" target="_blank">GitHub</a><br />
-        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-      </p>
-    </section>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:dileep.patel@gmail.com">dileep.patel@gmail.com</a>
+          Phone: <a href="tel:+8005662627">+800 566 2627</a>
+        </p>
+      </section>
+
+      <!-- ===== TABLE ===== -->
+      <section>
+        <h2>Grades</h2>
+        <table border="1">
+          <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>B</td>
+          </tr>
+        </table>
+      </section>
+      <!-- ===== FORM ===== -->
+      <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <!-- Comment 1: Name field -->
+          <label>Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <!-- Comment 2: Email field -->
+          <label>Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <!-- Branch Dropdown -->
+          <label>Branch:</label>
+          <select name="branch">
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>CS</option>
+          </select><br /><br />
+
+          <!-- Gender Radio -->
+          <div class="options">
+            <input type="radio" name="gender" value="Male" /> Male
+
+            <input type="radio" name="gender" value="Female" /> Female
+          </div>
+
+          <!-- Skills Checkbox -->
+          <div class="options">
+            <input type="checkbox" value="HTML" /> HTML
+
+            <input type="checkbox" value="CSS" /> CSS
+
+            <input type="checkbox" value="Java" /> Java
+          </div>
+
+          <!-- Comment 3: Message textarea -->
+          <label>Message:</label><br />
+          <textarea id="message" rows="4" cols="40"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <button id="timeBtn">Show Current Time</button>
+
+        <p id="timeDisplay"></p>
+
+      </section>
+
   </main>
   <!-- ================= FOOTER ================= -->
   <footer>
+    <section class="links">
+      <h2>Connect With Me</h2>
+
+      <div class="social-links">
+
+        <a href="https://github.com/" target="_blank">GitHub
+
+
+          <i class="fa-brands fa-github"></i>
+
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">LinkedIn
+
+          <i class="fa-brands fa-linkedin"></i>
+
+        </a>
+
+      </div>
+    </section>
     <p>&copy; 2026 My Student Portfolio</p>
   </footer>
   <script src="script.js"></script>
